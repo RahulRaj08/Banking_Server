@@ -1,0 +1,83 @@
+•	Node is asynchronous, i.e., it can resolve multiple requests at a single time
+
+Files required for server
+1.	Package.json : for third party packets and libraries. Command: npm init
+
+
+Server Creation
+---------------
+
+install express Command: npm i express
+
+1. Import Express
+
+2.Create an app using Express
+
+3.Create port number (3000 series)
+
+4.create requests according to project 
+
+    //get requests
+
+    app.get('/',(req,res)=>{
+
+    })
+
+    //post
+    //put
+    //patch
+    //delete
+
+
+
+nodemon server  for continous autocompilation
+--------------
+
+- npm i -g nodemon
+  
+
+
+*Express only accepts arrows functions
+
+
+
+User Authentication
+
+-JWT(Json web token) Token
+-------------------------
+
+
+-jsonwebtoken  -library  npmi jsonwebtoken
+
+    -sign(): method to generate token
+        - it has 2 parameters:  1.A unique key  2.secretkey (string)
+
+    -verify(): method to verify jwt token    
+
+
+
+Middlewares
+------------
+    
+    -They have the capacity to control server requests
+    -It is a function with 3 arguments (request,response,next)
+
+ They are of two type:
+    1.Application specific Middlewares
+    2.Router specific Middlewares    
+
+
+
+Solving runtime errors in javascript
+-----------------------------------
+
+
+try - catch
+
+    try{
+        error causing code
+    }
+
+    catch{                 // catch only works if there is error in try 
+        solution
+    }
